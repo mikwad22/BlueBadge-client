@@ -17,8 +17,7 @@ const moodMapper = () => {
     return props.moods.map((mood, index) => {
         return(
             <tr key={index}>
-                <th scope ="row">{mood.id}</th>
-                <td>{mood.date}</td>
+                <th scope ="row">{mood.date}</th>
                 <td>{mood.timeOfDay}</td>
                 <td>{mood.mood}</td>
                 <td>{mood.comment}</td>
@@ -37,7 +36,6 @@ return(
     <Table striped>
         <thead>
             <tr>
-                <th>Log #</th>
                 <th>Date</th>
                 <th>Time of Day</th>
                 <th>Mood</th>

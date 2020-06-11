@@ -12,8 +12,8 @@ const MoodEdit = (props) => {
         event.preventDefault();
         fetch(`http://localhost:4000/moods/log/${props.moodToUpdate.id}`, {
             method: 'PUT',
-            body: JSON.stringify({log: 
-                    {date: editDate, 
+            body: JSON.stringify({log: {
+                    date: editDate, 
                     timeOfDay: editTime, 
                     mood: editMood, 
                     comment: editCom}}),
@@ -21,8 +21,8 @@ const MoodEdit = (props) => {
                 'Content-Type': 'application/json',
                 'Authorization': props.token
             })
-        }) .then(
-            (res) => {
+        }) .then((res) => res.json())
+        .then(() => {
             props.getMoods();
             props.updateOff();
         })
