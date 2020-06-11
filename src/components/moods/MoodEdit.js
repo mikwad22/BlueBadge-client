@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Button, Form, FormGroup, Label, Input, Modal, ModalHeader, ModalBody} from 'reactstrap';
-import './index.css'
+import './index.css';
+import APIURL from '../../helpers/enviroment';
 
 const MoodEdit = (props) => {
     const [editDate, setEditDate] = useState(props.moodToUpdate.date);
@@ -10,7 +11,7 @@ const MoodEdit = (props) => {
     
     const moodUpdate = (event, mood) => {
         event.preventDefault();
-        fetch(`http://localhost:4000/moods/log/${props.moodToUpdate.id}`, {
+        fetch(`${APIURL}/moods/log/${props.moodToUpdate.id}`, {
             method: 'PUT',
             body: JSON.stringify({log: {
                     date: editDate, 

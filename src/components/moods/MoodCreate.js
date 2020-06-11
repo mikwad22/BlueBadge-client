@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Button, Form, FormGroup, Label, Input} from 'reactstrap';
-import './index.css'
+import './index.css';
+import APIURL from '../../helpers/enviroment';
 
 const MoodCreate = (props) => {
     const [date, setDate] = useState('');
@@ -10,7 +11,7 @@ const MoodCreate = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch(`http://localhost:4000/moods/log`, {
+        fetch(`${APIURL}/moods/log`, {
             method: 'POST',
             body: JSON.stringify({log: {date: date, timeOfDay: timeOfDay, mood: mood, comment: comment}}),
             headers: new Headers({

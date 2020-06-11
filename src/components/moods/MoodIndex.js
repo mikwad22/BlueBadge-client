@@ -3,7 +3,8 @@ import {Container, Row, Col} from 'reactstrap';
 import MoodCreate from './MoodCreate';
 import MoodTable from './MoodTable';
 import MoodEdit from './MoodEdit';
-import './index.css'
+import './index.css';
+import APIURL from '../../helpers/enviroment';
 
 const MoodIndex = (props) => {
     const [moods, setMoods] = useState([]);
@@ -11,7 +12,7 @@ const MoodIndex = (props) => {
     const [moodToUpdate, setMoodToUpdate] = useState({});
     console.log(moods)
     const getMoods = () => {
-        fetch(`http://localhost:4000/moods/`, {
+        fetch(`${APIURL}/moods/`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json',

@@ -1,10 +1,11 @@
 import React from 'react';
 import {Table, Button} from 'reactstrap';
-import './index.css'
+import './index.css';
+import APIURL from '../../helpers/enviroment';
 
 const MoodTable = (props) => {
     const deleteMood = (mood) => {
-        fetch(`http://localhost:4000/moods/log/${mood.id}`, {
+        fetch(`${APIURL}/moods/log/${mood.id}`, {
             method: 'DELETE',
             headers: new Headers({
                 'Content-Type': 'application/json',
