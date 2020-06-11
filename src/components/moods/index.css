@@ -1,0 +1,30 @@
+.history {
+    padding-top: 200px;
+}
+
+.greeting {
+    color: whitesmoke;
+    padding-top: 40px;
+    font-family: fantasy, sans-serif, 'Courier New', Courier, monospace;
+    font-size: 35px;
+    text-align: center;
+}
+
+.greet {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.moods {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    border: 1px solid #d2d2d2;
+    box-shadow: 0px 8px 18px #c4c4c4;
+    padding: 1em 2em 2em 2em;
+    max-width: 400px;
+    min-width: 300px;
+    border: 1px solid #d2d2d2;
+    box-shadow: 0px 8px 18px #c4c4c4;
+    color: #333;
+}
