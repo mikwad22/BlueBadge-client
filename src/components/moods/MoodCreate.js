@@ -32,7 +32,7 @@ const MoodCreate = (props) => {
     return(
         <>
         <h3 className="greeting">How are you feeling today?</h3>
-        <p className="greet">A safe place to keep track of your moods and feelings</p>
+        <p className="greet">Record your mood and keep track of your feelings in the history table below.</p>
         <Form onSubmit = {handleSubmit}>
             <FormGroup>
                 <Label htmlFor="currentDate">Date:</Label>

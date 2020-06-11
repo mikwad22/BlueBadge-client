@@ -1,10 +1,11 @@
 .history {
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 .greeting {
     color: whitesmoke;
-    padding-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 0px;
     font-family: fantasy, sans-serif, 'Courier New', Courier, monospace;
     font-size: 35px;
     text-align: center;
@@ -13,18 +14,17 @@
 .greet {
     color: whitesmoke;
     text-align: center;
+    padding: 0px 0px 0px 0px;
 }
 
 .moods {
     margin-right: auto;
     margin-left: auto;
-    margin-top: 60px;
+    margin-top: 50px;
     border: 1px solid #d2d2d2;
     box-shadow: 0px 8px 18px #c4c4c4;
     padding: 1em 2em 2em 2em;
-    max-width: 400px;
-    min-width: 300px;
     border: 1px solid #d2d2d2;
     box-shadow: 0px 8px 18px #c4c4c4;
-    color: #333;
+    color: darkslategray;
 }
