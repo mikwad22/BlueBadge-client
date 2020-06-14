@@ -1,7 +1,13 @@
+@font-face {
+    font-family: jushley;
+    src: url(../../assets/Jushley\ Shine.otf);
+}
+
 .navbar {
     background-color: lightblue;
 }
 
 .tracker {
-    font-family: fantasy, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: jushley;
+    color: darkslategray;
 }

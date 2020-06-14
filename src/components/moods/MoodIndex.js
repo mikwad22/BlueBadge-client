@@ -3,14 +3,14 @@ import {Container, Row, Col} from 'reactstrap';
 import MoodCreate from './MoodCreate';
 import MoodTable from './MoodTable';
 import MoodEdit from './MoodEdit';
-import './index.css';
 import APIURL from '../../helpers/enviroment';
+import './index.css';
 
 const MoodIndex = (props) => {
     const [moods, setMoods] = useState([]);
     const [updateActive, setUpdateActive] = useState(false);
-    const [moodToUpdate, setMoodToUpdate] = useState({});
-    console.log(moods)
+    const [updateMood, setUpdateMood] = useState({});
+    
     const getMoods = () => {
         fetch(`${APIURL}/moods/`, {
             method: 'GET',
@@ -20,7 +20,7 @@ const MoodIndex = (props) => {
             })
         }) .then((res) => res.json())
         .then((logData) => {
-            setMoods(logData.logs)
+            setMoods(logData.log)
             console.log(logData)
         })
     }
@@ -29,8 +29,7 @@ const MoodIndex = (props) => {
     }, [])
 
     const editUpdateMood = (mood) => {
-        setMoodToUpdate(mood);
-        console.log(mood);
+        setUpdateMood(mood);
     }
     const updateOn = () => {
         setUpdateActive(true);
@@ -53,7 +52,7 @@ const MoodIndex = (props) => {
                     <MoodTable moods={moods} editUpdateMood={editUpdateMood}
                     updateOn={updateOn} getMoods={getMoods} token={props.token}/>
                 </Col>
-                {updateActive ? <MoodEdit moodToUpdate={moodToUpdate}
+                {updateActive ? <MoodEdit updateMood={updateMood}
                 updateOff={updateOff} token={props.token} getMoods={getMoods}/> : <></>}
             </Row>
         </Container>

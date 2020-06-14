@@ -1,3 +1,8 @@
+@font-face {
+    font-family: palace;
+    src: url(../../assets/Palace.ttf);
+  }
+
 .history {
     padding-top: 100px;
 }
@@ -6,7 +11,7 @@
     color: whitesmoke;
     padding-top: 30px;
     padding-bottom: 0px;
-    font-family: fantasy, sans-serif, 'Courier New', Courier, monospace;
+    font-family: jushley;
     font-size: 35px;
     text-align: center;
 }

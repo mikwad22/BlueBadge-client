@@ -1,7 +1,7 @@
 import React from 'react';
 import {Table, Button} from 'reactstrap';
-import './index.css';
 import APIURL from '../../helpers/enviroment';
+import './index.css';
 
 const MoodTable = (props) => {
     const deleteMood = (mood) => {
@@ -37,6 +37,7 @@ return(
     <Table striped>
         <thead>
             <tr>
+                <th>User #</th>
                 <th>Date</th>
                 <th>Time of Day</th>
                 <th>Mood</th>

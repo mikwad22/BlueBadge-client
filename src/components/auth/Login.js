@@ -27,11 +27,11 @@ const Login = (props) => {
             <h1 className="header">LOGIN</h1>
             <Form onSubmit={handleSubmit}>
                 <FormGroup>
-                    <Label htmlFor="username">Username</Label>
+                    <Label htmlFor="username">Username:</Label>
                     <Input onChange={(e) => setUsername(e.target.value)} name="username" value={username}/>
                 </FormGroup>
                 <FormGroup>
-                    <Label htmlFor="password">Password</Label>
+                    <Label htmlFor="password">Password:</Label>
                     <Input type="password" onChange={(e) => setPassword(e.target.value)} name="password" value={password}/>
                 </FormGroup>
                 <Button type="submit">Login</Button>
