@@ -34,10 +34,9 @@ return(
     <>
     <h3 className="history">Mood History:</h3>
     <hr/>
-    <Table striped>
-        <thead>
+    <Table striped className="table">
+        <thead className="thead">
             <tr>
-                <th>User #</th>
                 <th>Date</th>
                 <th>Time of Day</th>
                 <th>Mood</th>

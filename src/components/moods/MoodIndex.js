@@ -10,7 +10,7 @@ const MoodIndex = (props) => {
     const [moods, setMoods] = useState([]);
     const [updateActive, setUpdateActive] = useState(false);
     const [updateMood, setUpdateMood] = useState({});
-    
+    console.log(moods)
     const getMoods = () => {
         fetch(`${APIURL}/moods/`, {
             method: 'GET',
@@ -30,6 +30,7 @@ const MoodIndex = (props) => {
 
     const editUpdateMood = (mood) => {
         setUpdateMood(mood);
+        console.log(mood);
     }
     const updateOn = () => {
         setUpdateActive(true);

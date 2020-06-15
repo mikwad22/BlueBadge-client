@@ -5,13 +5,15 @@
 
 .history {
     padding-top: 100px;
+    font-family: orangeB;
+    color: teal;
 }
 
 .greeting {
     color: whitesmoke;
     padding-top: 30px;
     padding-bottom: 0px;
-    font-family: jushley;
+    font-family: orangeB;
     font-size: 35px;
     text-align: center;
 }

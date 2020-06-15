@@ -4,25 +4,27 @@ import APIURL from '../../helpers/enviroment';
 import './index.css';
 
 const MoodEdit = (props) => {
+
+    console.log(props)
     const [editDate, setEditDate] = useState(props.updateMood.date);
     const [editTime, setEditTime] = useState(props.updateMood.timeOfDay);
     const [editMood, setEditMood] = useState(props.updateMood.mood);
     const [editCom, setEditCom] = useState(props.updateMood.comment);
    
-    const moodUpdate = (event) => {
+    const moodUpdate = (event, mood) => {
         event.preventDefault();
         fetch(`${APIURL}/moods/log/${props.updateMood.id}`, {
             method: 'PUT',
-            body: JSON.stringify({log: {
+            body: JSON.stringify({
                     date: editDate, 
                     timeOfDay: editTime, 
                     mood: editMood, 
-                    comment: editCom}}),
+                    comment: editCom}),
             headers: new Headers({
                 'Content-Type': 'application/json',
                 'Authorization': props.token
             })
-        }) .then(() => {
+        }) .then((res) => {
             props.getMoods();
             props.updateOff();
         })
