@@ -56,7 +56,7 @@ const MoodEdit = (props) => {
                         <Label htmlFor="comment">Edit Comment:</Label>
                         <Input type="textarea" name="comment" value={editCom} onChange={e => setEditCom(e.target.value)}></Input>
                     </FormGroup>
-                    <Button type="submit">Update Mood Log</Button>
+                    <Button className="button" type="submit">Update Mood Log</Button>
                 </Form>
             </ModalBody>
         </Modal>

@@ -13,3 +13,8 @@
   src: url(./assets/Orange\ Blossom.ttf);
 
 }
+
+@font-face {
+  font-family: lemon;
+  src: url(./assets/lemon.otf);
+}

@@ -16,15 +16,18 @@ const MoodTable = (props) => {
     }
 const moodMapper = () => {
     return props.moods.map((mood, index) => {
+        console.log(mood)
+        let convertDate = mood.date;
+        let sliced = convertDate.slice(0, 10)
         return(
             <tr key={index}>
-                <th scope ="row">{mood.date}</th>
+                <th scope ="row">{sliced}</th>
                 <td>{mood.timeOfDay}</td>
                 <td>{mood.mood}</td>
                 <td>{mood.comment}</td>
                 <td>
-                    <Button color="info" onClick={() => {props.editUpdateMood(mood); props.updateOn()}}>Edit</Button>
-                    <Button color="secondary" onClick={() => {deleteMood(mood)}}>Delete</Button>
+                    <Button className="button" color="info" onClick={() => {props.editUpdateMood(mood); props.updateOn()}}>Edit</Button>
+                    <Button className="button" color="secondary" onClick={() => {deleteMood(mood)}}>Delete</Button>
                 </td>
             </tr>
         )

@@ -12,12 +12,12 @@ const Sitebar = (props) => {
     return(
         <div>
         <Navbar color="" light expand="md">
-            <NavbarBrand className="tracker" href="/">Mood Tracker</NavbarBrand>
+            <NavbarBrand className="tracker" href="/">Moodify</NavbarBrand>
             <NavbarToggler onClick={toggle}/>
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                     <NavItem>
-                        <Button onClick={props.clickLogout}>Logout</Button>
+                        <Button className="navbutton" onClick={props.clickLogout}>Logout</Button>
                     </NavItem>
                 </Nav>
             </Collapse>

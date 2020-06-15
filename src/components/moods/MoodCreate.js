@@ -48,14 +48,14 @@ const MoodCreate = (props) => {
                 </Input>
             </FormGroup>
             <FormGroup>
-                <Label htmlFor="mood">Current Mood:</Label>
+                <Label htmlFor="mood">Current Mood: (e.g., Sad, Happy, Excited, Angry, Grateful, Frustrated)</Label>
                 <Input name="mood" value={mood} onChange={(e) => setMood(e.target.value)}/>
             </FormGroup>
             <FormGroup>
                 <Label htmlFor="comment">Enter a comment or note about your mood:</Label>
                 <Input type="textarea" name ="comment" id="text" value={comment} onChange={(e) => setComment(e.target.value)}/>
             </FormGroup>
-            <Button type="submit">Click to submit mood</Button>
+            <Button className="button" type="submit">Click to submit mood</Button>
         </Form>
         </>
     )

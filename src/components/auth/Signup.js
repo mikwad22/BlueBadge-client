@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Form, FormGroup, Label, Input, Button} from 'reactstrap';
 import APIURL from '../../helpers/enviroment';
+import './Auth.css';
 
 const Signup = (props) => {
     const [username, setUsername] = useState('');
@@ -27,13 +28,13 @@ const Signup = (props) => {
             <Form className="signup" onSubmit={handleSubmit}>
                 <FormGroup>
                     <Label htmlFor="username">Username:</Label>
-                    <Input onChange={(e) => setUsername(e.target.value)} name="username" value={username}/>
+                    <Input onChange={(e) => setUsername(e.target.value)} name="username" required minLength="4" value={username}/>
                 </FormGroup>
                 <FormGroup>
                     <Label htmlFor="password">Password:</Label>
-                    <Input type="password" onChange={(e) => setPassword(e.target.value)} name="password" value={password}/>
+                    <Input type="password" required minLength="5" onChange={(e) => setPassword(e.target.value)} name="password" value={password}/>
                 </FormGroup>
-                <Button type="submit">Sign-up as a new user</Button>
+                <Button className="button" type="submit">Sign-up as a new user</Button>
             </Form>
         </div>
     )

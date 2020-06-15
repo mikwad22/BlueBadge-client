@@ -8,11 +8,21 @@
     src: url(../../assets/Orange\ Blossom.ttf);
 }
 
+@font-face {
+    font-family: lemon;
+    src: url(../../assets/lemon.otf);
+}
+
 .navbar {
     background-color: lightblue;
 }
 
 .tracker {
-    font-family: orangeB;
+    font-family: lemon;
     color: darkslategray;
+    font-weight: bold;
+}
+
+.navbutton {
+    font-family: lemon; 
 }

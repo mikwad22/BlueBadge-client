@@ -28,13 +28,13 @@ const Login = (props) => {
             <Form onSubmit={handleSubmit}>
                 <FormGroup>
                     <Label htmlFor="username">Username:</Label>
-                    <Input onChange={(e) => setUsername(e.target.value)} name="username" value={username}/>
+                    <Input onChange={(e) => setUsername(e.target.value)} name="username" value={username} required/>
                 </FormGroup>
                 <FormGroup>
                     <Label htmlFor="password">Password:</Label>
-                    <Input type="password" onChange={(e) => setPassword(e.target.value)} name="password" value={password}/>
+                    <Input type="password" onChange={(e) => setPassword(e.target.value)} name="password" value={password} required/>
                 </FormGroup>
-                <Button type="submit">Login</Button>
+                <Button className="button" type="submit">Login</Button>
             </Form>
         </div>
     )
