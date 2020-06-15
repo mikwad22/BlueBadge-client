@@ -10,8 +10,6 @@ switch (window.location.hostname) {
     case 'moodtrackerapp.herokuapp.com' :
         // this is the full URL of your deployed server/API
         APIURL = 'https://moodtracker-server.herokuapp.com'
-    default:
-        console.log('cant reach an api')
 }
 
 export default APIURL;
