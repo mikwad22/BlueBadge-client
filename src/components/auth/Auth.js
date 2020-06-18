@@ -6,7 +6,7 @@ import './Auth.css';
 
 const Auth = (props) => {
     return(
-        <div>
+        <div className="image">
             <h4 className="greets">Welcome to Moodify. A safe place to keep track of your moods and thoughts.</h4>
          <Container className="auth-container">
             <Row>

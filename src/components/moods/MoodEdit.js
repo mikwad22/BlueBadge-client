@@ -32,7 +32,7 @@ const MoodEdit = (props) => {
 
     return(
         <Modal isOpen={true}>
-            <ModalHeader>Edit Your Mood Here</ModalHeader>
+            <ModalHeader className="edit">Edit Your Mood Here</ModalHeader>
             <ModalBody>
                 <Form onSubmit={moodUpdate}>
                     <FormGroup>
@@ -56,7 +56,7 @@ const MoodEdit = (props) => {
                         <Label htmlFor="comment">Edit Comment:</Label>
                         <Input type="textarea" name="comment" value={editCom} onChange={e => setEditCom(e.target.value)}></Input>
                     </FormGroup>
-                    <Button className="button" type="submit">Update Mood Log</Button>
+                    <Button color="info" className="button" type="submit">Update Mood Log</Button>
                 </Form>
             </ModalBody>
         </Modal>

@@ -14,7 +14,8 @@ const MoodTable = (props) => {
         })
         .then(() => props.getMoods())
     }
-const moodMapper = () => {
+
+    const moodMapper = () => {
     return props.moods.map((mood, index) => {
         console.log(mood)
         let convertDate = mood.date;
@@ -26,18 +27,18 @@ const moodMapper = () => {
                 <td>{mood.mood}</td>
                 <td>{mood.comment}</td>
                 <td>
-                    <Button className="button" color="info" onClick={() => {props.editUpdateMood(mood); props.updateOn()}}>Edit</Button>
-                    <Button className="button" color="secondary" onClick={() => {deleteMood(mood)}}>Delete</Button>
+                    <Button className="button" outline color="info" onClick={() => {props.editUpdateMood(mood); props.updateOn()}}>Edit</Button>
+                    <Button className="button" outline color="danger" onClick={() => {deleteMood(mood)}}>Delete</Button>
                 </td>
             </tr>
         )
     })
 }
 return(
-    <>
-    <h3 className="history">Mood History:</h3>
+    <div className="tab">
+    <h3 className="history">Mood History</h3>
     <hr/>
-    <Table striped className="table">
+    <Table size="sm" striped className="table">
         <thead className="thead">
             <tr>
                 <th>Date</th>
@@ -50,7 +51,7 @@ return(
             {moodMapper()}
         </tbody>
     </Table>
-    </>
+    </div>
 )
 }
 export default MoodTable;

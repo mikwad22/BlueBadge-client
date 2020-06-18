@@ -11,7 +11,8 @@
 .history {
     padding-top: 100px;
     font-family: orangeB;
-    color: teal;
+    color: rgb(74, 145, 158);
+    width: 100%;
 }
 
 .greeting {
@@ -39,8 +40,28 @@
     border: 1px solid #d2d2d2;
     box-shadow: 0px 8px 18px #c4c4c4;
     color: darkslategray;
+    border-radius: 5px;
 }
 
 .button {
     font-family: lemon;
+}
+
+.edit {
+    color: teal;
+}
+
+.table {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    border: 0px solid #6ec1d0;
+    box-shadow: 4px 8px 18px #6ec1d0;
+    padding: 1em 2em 2em 2em;
+    border-radius: 5px;
+}
+.thead {
+    font-family: lemon;
+    font-size: 22px;
+    color: rgb(74, 145, 158);
 }

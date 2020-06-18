@@ -5,10 +5,12 @@
 
 body {
     background: url(../../assets/sea-of-clouds.jpg);
-    background-size: 100vw 100vh;
+    background-size: 100vw 100vh; 
     background-repeat: no-repeat;
     justify-content: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    margin: 0 auto;
 }
 
 .header {
@@ -28,6 +30,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+    border-radius: 5px;
 }
 
 .row {
