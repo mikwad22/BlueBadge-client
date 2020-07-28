@@ -3,6 +3,8 @@ Full Stack application using PostgreSQL, Express, React and Node. Styled with Re
 
 Allows users to sign-up, login, post or log a mood by date with the ability to add a comment, edit mood, and delete mood. All moods are shown in a history table for a single user.
 
+Deployed to Heroku: https://moodtrackerapp.herokuapp.com/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
