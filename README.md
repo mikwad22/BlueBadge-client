@@ -1,5 +1,7 @@
-### About
+## About
+Full Stack application using PostgreSQL, Express, React and Node. Styled with Reactstrap and CSS. Built during Blue Badge at Eleven Fifty Academy.
 
+Allows users to sign-up, login, post or log a mood by date with the ability to add a comment, edit mood, and delete mood. All moods are shown in a history table for a single user.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
